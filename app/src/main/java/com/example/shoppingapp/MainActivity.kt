@@ -34,11 +34,11 @@ class MainActivity : ComponentActivity() {
                     val id = backStack.arguments?.getString("id")?.toInt()
                     val product = viewModel.products.first { it.id == id }
 
-                    DetailScreen(product, viewModel)
+                    DetailScreen(product, viewModel, navController)
                 }
 
                 composable("cart") {
-                    CartScreen(viewModel)
+                    CartScreen(viewModel, navController)
                 }
             }
         }

@@ -3,5 +3,6 @@ package com.example.shoppingapp.data
 data class Product(
     val id: Int,
     val name: String,
-    val price: Double
+    val price: Double,
+    val icon: String // simple identifier
 )
